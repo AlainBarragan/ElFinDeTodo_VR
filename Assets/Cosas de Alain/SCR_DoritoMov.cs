@@ -4,7 +4,9 @@ public class SCR_DoritoMov : MonoBehaviour
 {
     private bool isDone;
     private bool isTouched;
+    private int index;
     private string words;
+    private float waitTime;
     private Transform currentPos, nextPos;
     private Transform[] letterPos;
 
@@ -38,7 +40,7 @@ public class SCR_DoritoMov : MonoBehaviour
         X,
         Y,
         Z,
-        num0 ,
+        num0,
         num1,
         num2,
         num3,
@@ -67,6 +69,42 @@ public class SCR_DoritoMov : MonoBehaviour
     {
         nextPos = letterPos[(int)TABLA.yes];
         isDone = false;
+    }
+
+    public void WriteString(string _words)
+    {
+        words = _words;
+        index = 0;
+        waitTime = 1.0f;
+        isDone = false;
+        words = words.ToLower();
+        Debug.Log(words);
+        nextPos = letterPos[(int)System.Text.Encoding.UTF8.GetBytes(words)[index] - 94];
+    }
+
+    private void NextLetter()
+    {
+        if (index == words.Length)
+        {
+            isDone = true;
+            return;
+        }
+
+        if (Vector3.Distance(this.transform.position, nextPos.position) < 0.01f)
+        {
+            waitTime = 0.0f;
+            currentPos = nextPos;
+            index++;
+            if (index < words.Length)
+                nextPos = letterPos[(int)System.Text.Encoding.UTF8.GetBytes(words)[index] - 94];
+        }
+        else
+        {
+            if (waitTime < 1)
+                waitTime += Time.deltaTime;
+            else
+                this.transform.position = Vector3.MoveTowards(this.transform.position, nextPos.position, 0.5f * Time.deltaTime);
+        }
     }
 
     private void MoveToPosition()
@@ -100,14 +138,13 @@ public class SCR_DoritoMov : MonoBehaviour
 
     private void Start()
     {
-        currentPos = this.transform;
+        currentPos = nextPos = this.transform;
         isDone = true;
+        words = "";
+        waitTime = 0.0f;
         isTouched = false;
+        index = 0;
         letterPos = GameObject.Find("positions").GetComponentsInChildren<Transform>();
-        for (int i = 0; i < letterPos.Length; i++)
-        {
-            Debug.Log(i + ": " + letterPos[i].name);
-        }
     }
 
     private void Update()
@@ -118,8 +155,11 @@ public class SCR_DoritoMov : MonoBehaviour
             WriteNo();
         else if (Input.GetKeyDown(KeyCode.G))
             WriteGoodBye();
+        else if (Input.GetKeyDown(KeyCode.W))
+            WriteString("palabra");
 
-        if (!isDone)
+        NextLetter();
+        if (isDone)
             MoveToPosition();
     }
 }
