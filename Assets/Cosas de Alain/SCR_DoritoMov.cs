@@ -79,7 +79,10 @@ public class SCR_DoritoMov : MonoBehaviour
         estasFinita = false;
         vortoj = vortoj.ToLower();
         Debug.Log(vortoj);
-        sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
+        if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 58)
+            sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
+        else
+            sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 45];
     }
 
     private void SekvaLetero()
@@ -96,7 +99,12 @@ public class SCR_DoritoMov : MonoBehaviour
             aktualaPozicio = sekvaPozicio;
             indekso++;
             if (indekso < vortoj.Length)
-                sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
+            {
+                if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 58)
+                    sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
+                else
+                    sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 45];
+            }
         }
         else
         {
@@ -149,6 +157,7 @@ public class SCR_DoritoMov : MonoBehaviour
 
     private void Update()
     {
+        #if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Y))
             SkribuYes();
         else if (Input.GetKeyDown(KeyCode.N))
@@ -157,6 +166,9 @@ public class SCR_DoritoMov : MonoBehaviour
             SkribuGoodBye();
         else if (Input.GetKeyDown(KeyCode.W))
             SkribuString("vorto");
+        else if (Input.GetKeyDown(KeyCode.Alpha0))
+            SkribuString("Choko0823");
+        #endif
 
         SekvaLetero();
         if (estasFinita)
