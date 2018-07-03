@@ -2,15 +2,15 @@
 
 public class SCR_DoritoMov : MonoBehaviour
 {
-    private bool isDone;
-    private bool isTouched;
-    private int index;
-    private string words;
-    private float waitTime;
-    private Transform currentPos, nextPos;
-    private Transform[] letterPos;
+    private bool estasFinita;
+    private bool estasTusita;
+    private int indekso;
+    private string vortoj;
+    private float atendoTempon;
+    private Transform aktualaPozicio, sekvaPozicio;
+    private Transform[] leteroPozicio;
 
-    private enum TABLA
+    private enum TABULO
     {
         yes = 1,
         no,
@@ -53,70 +53,70 @@ public class SCR_DoritoMov : MonoBehaviour
         goodBye
     }
 
-    public void WriteGoodBye()
+    public void SkribuGoodBye()
     {
-        nextPos = letterPos[(int)TABLA.goodBye];
-        isDone = false;
+        sekvaPozicio = leteroPozicio[(int)TABULO.goodBye];
+        estasFinita = false;
     }
 
-    public void WriteNo()
+    public void SkribuNo()
     {
-        nextPos = letterPos[(int)TABLA.no];
-        isDone = false;
+        sekvaPozicio = leteroPozicio[(int)TABULO.no];
+        estasFinita = false;
     }
 
-    public void WriteYes()
+    public void SkribuYes()
     {
-        nextPos = letterPos[(int)TABLA.yes];
-        isDone = false;
+        sekvaPozicio = leteroPozicio[(int)TABULO.yes];
+        estasFinita = false;
     }
 
-    public void WriteString(string _words)
+    public void SkribuString(string _vortoj)
     {
-        words = _words;
-        index = 0;
-        waitTime = 1.0f;
-        isDone = false;
-        words = words.ToLower();
-        Debug.Log(words);
-        nextPos = letterPos[(int)System.Text.Encoding.UTF8.GetBytes(words)[index] - 94];
+        vortoj = _vortoj;
+        indekso = 0;
+        atendoTempon = 1.0f;
+        estasFinita = false;
+        vortoj = vortoj.ToLower();
+        Debug.Log(vortoj);
+        sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
     }
 
-    private void NextLetter()
+    private void SekvaLetero()
     {
-        if (index == words.Length)
+        if (indekso == vortoj.Length)
         {
-            isDone = true;
+            estasFinita = true;
             return;
         }
 
-        if (Vector3.Distance(this.transform.position, nextPos.position) < 0.01f)
+        if (Vector3.Distance(this.transform.position, sekvaPozicio.position) < 0.01f)
         {
-            waitTime = 0.0f;
-            currentPos = nextPos;
-            index++;
-            if (index < words.Length)
-                nextPos = letterPos[(int)System.Text.Encoding.UTF8.GetBytes(words)[index] - 94];
+            atendoTempon = 0.0f;
+            aktualaPozicio = sekvaPozicio;
+            indekso++;
+            if (indekso < vortoj.Length)
+                sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
         }
         else
         {
-            if (waitTime < 1)
-                waitTime += Time.deltaTime;
+            if (atendoTempon < 1)
+                atendoTempon += Time.deltaTime;
             else
-                this.transform.position = Vector3.MoveTowards(this.transform.position, nextPos.position, 0.5f * Time.deltaTime);
+                this.transform.position = Vector3.MoveTowards(this.transform.position, sekvaPozicio.position, 0.5f * Time.deltaTime);
         }
     }
 
-    private void MoveToPosition()
+    private void MovigiAlPozicio()
     {
-        if (Vector3.Distance(this.transform.position, nextPos.position) < 0.01f)
+        if (Vector3.Distance(this.transform.position, sekvaPozicio.position) < 0.01f)
         {
-            isDone = true;
-            currentPos = nextPos;
+            estasFinita = true;
+            aktualaPozicio = sekvaPozicio;
         }
         else
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, nextPos.position, 0.5f * Time.deltaTime);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, sekvaPozicio.position, 0.5f * Time.deltaTime);
         }
     }
 
@@ -124,7 +124,7 @@ public class SCR_DoritoMov : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isTouched = true;
+            estasTusita = true;
         }
     }
 
@@ -132,34 +132,34 @@ public class SCR_DoritoMov : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isTouched = false;
+            estasTusita = false;
         }
     }
 
     private void Start()
     {
-        currentPos = nextPos = this.transform;
-        isDone = true;
-        words = "";
-        waitTime = 0.0f;
-        isTouched = false;
-        index = 0;
-        letterPos = GameObject.Find("positions").GetComponentsInChildren<Transform>();
+        aktualaPozicio = sekvaPozicio = this.transform;
+        estasFinita = true;
+        vortoj = "";
+        atendoTempon = 0.0f;
+        estasTusita = false;
+        indekso = 0;
+        leteroPozicio = GameObject.Find("positions").GetComponentsInChildren<Transform>();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Y))
-            WriteYes();
+            SkribuYes();
         else if (Input.GetKeyDown(KeyCode.N))
-            WriteNo();
+            SkribuNo();
         else if (Input.GetKeyDown(KeyCode.G))
-            WriteGoodBye();
+            SkribuGoodBye();
         else if (Input.GetKeyDown(KeyCode.W))
-            WriteString("palabra");
+            SkribuString("vorto");
 
-        NextLetter();
-        if (isDone)
-            MoveToPosition();
+        SekvaLetero();
+        if (estasFinita)
+            MovigiAlPozicio();
     }
 }
