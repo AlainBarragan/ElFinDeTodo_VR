@@ -79,10 +79,10 @@ public class SCR_DoritoMov : MonoBehaviour
         estasFinita = false;
         vortoj = vortoj.ToLower();
         Debug.Log(vortoj);
-        if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 58)
+        if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 90)
             sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
         else
-            sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 45];
+            sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 47 + (int)TABULO.Z];
     }
 
     private void SekvaLetero()
@@ -95,15 +95,19 @@ public class SCR_DoritoMov : MonoBehaviour
 
         if (Vector3.Distance(this.transform.position, sekvaPozicio.position) < 0.01f)
         {
+            int num;
             atendoTempon = 0.0f;
             aktualaPozicio = sekvaPozicio;
             indekso++;
             if (indekso < vortoj.Length)
             {
-                if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 58)
-                    sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94];
+                if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 90)
+                    num = (int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94;
                 else
-                    sekvaPozicio = leteroPozicio[(int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 45];
+                    num = (int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 47 + (int)TABULO.Z;
+
+                sekvaPozicio = leteroPozicio[num];
+                Debug.Log(num);
             }
         }
         else
@@ -167,7 +171,7 @@ public class SCR_DoritoMov : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.W))
             SkribuString("vorto");
         else if (Input.GetKeyDown(KeyCode.Alpha0))
-            SkribuString("Choko0823");
+            SkribuString("ChoKo0824");
         #endif
 
         SekvaLetero();
