@@ -95,19 +95,18 @@ public class SCR_DoritoMov : MonoBehaviour
 
         if (Vector3.Distance(this.transform.position, sekvaPozicio.position) < 0.01f)
         {
-            int num;
+            int nombro;
             atendoTempon = 0.0f;
             aktualaPozicio = sekvaPozicio;
             indekso++;
             if (indekso < vortoj.Length)
             {
                 if ((int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] > 90)
-                    num = (int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94;
+                    nombro = (int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 94;
                 else
-                    num = (int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 47 + (int)TABULO.Z;
+                    nombro = (int)System.Text.Encoding.UTF8.GetBytes(vortoj)[indekso] - 47 + (int)TABULO.Z;
 
-                sekvaPozicio = leteroPozicio[num];
-                Debug.Log(num);
+                sekvaPozicio = leteroPozicio[nombro];
             }
         }
         else
@@ -169,9 +168,9 @@ public class SCR_DoritoMov : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.G))
             SkribuGoodBye();
         else if (Input.GetKeyDown(KeyCode.W))
-            SkribuString("vorto");
+            SkribuString("Prueba");
         else if (Input.GetKeyDown(KeyCode.Alpha0))
-            SkribuString("ChoKo0824");
+            SkribuString("P5429");
         #endif
 
         SekvaLetero();
