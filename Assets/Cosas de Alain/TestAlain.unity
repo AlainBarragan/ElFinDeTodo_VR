@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872698, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -941,7 +941,7 @@ MonoBehaviour:
   overrideColor: 1
   overridingColor: {r: 0, g: 0.25098038, b: 1, a: 1}
   useShadow: 1
-  shadowMapRenderTexture: {fileID: 1700347829}
+  shadowMapRenderTexture: {fileID: 1283143318}
   useCookie: 1
   cookieMapRenderTexture: {fileID: 0}
   enableOutOfPhaseColor: 0
@@ -8783,6 +8783,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1278301482}
   m_Mesh: {fileID: 4300000, guid: a6110ef0f54494364b68e684a5f71891, type: 3}
+--- !u!84 &1283143318
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 512
+  m_Height: 256
+  m_AntiAliasing: 1
+  m_DepthFormat: 0
+  m_ColorFormat: 11
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1289422921 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1883382491451878, guid: 1650f4b3087084842a5717ba72bd9c96,
@@ -9574,16 +9605,57 @@ Prefab:
     - target: {fileID: 114751417291531694, guid: 07ffcbb2f05f66e4d865f261f9ea3c17,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114751417291531694, guid: 07ffcbb2f05f66e4d865f261f9ea3c17,
         type: 2}
       propertyPath: density.injectionParameters.strength
-      value: 1.39
+      value: -0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07ffcbb2f05f66e4d865f261f9ea3c17, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1428613611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1428613613}
+  - component: {fileID: 1428613612}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1428613612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1428613611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e4b323463a762449096b62fa4c8716, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  auraVolume: {fileID: 1669930602}
+--- !u!4 &1428613613
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1428613611}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0054709986, y: 0.35088795, z: -4.6266904}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1457929113
 GameObject:
   m_ObjectHideFlags: 0
@@ -11305,6 +11377,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1664024847}
   m_Mesh: {fileID: 4300002, guid: fc90ec2837aee404db2ef29375d09bcc, type: 3}
+--- !u!114 &1669930602 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114751417291531694, guid: 07ffcbb2f05f66e4d865f261f9ea3c17,
+    type: 2}
+  m_PrefabInternal: {fileID: 1422352413}
+  m_Script: {fileID: 11500000, guid: 4b142c931e4f39c429a012dc68ba0659, type: 3}
 --- !u!1 &1680055767
 GameObject:
   m_ObjectHideFlags: 0
@@ -11792,37 +11870,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1700022268}
   m_Mesh: {fileID: 4300000, guid: 783c8cc696aa9e242b74cb31da5a29c1, type: 3}
---- !u!84 &1700347829
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 512
-  m_Height: 256
-  m_AntiAliasing: 1
-  m_DepthFormat: 0
-  m_ColorFormat: 11
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1703058816
 GameObject:
   m_ObjectHideFlags: 0
@@ -11995,7 +12042,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1758046696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 583969065}
@@ -13998,6 +14045,14 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.41278672
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: f76d321ca59c3e340a0e6213a4a0b39b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4a151fd533fa38d4ba7975a9940d51d2, type: 2}
+    - target: {fileID: 9500000, guid: f76d321ca59c3e340a0e6213a4a0b39b, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: d3c1e4d954fba574588ca3bcba867d32, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f76d321ca59c3e340a0e6213a4a0b39b, type: 3}
   m_IsPrefabParent: 0
@@ -14476,7 +14531,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2062152485}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
   m_Name: 

@@ -160,7 +160,7 @@ public class SCR_DoritoMov : MonoBehaviour
 
     private void Update()
     {
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Y))
             SkribuYes();
         else if (Input.GetKeyDown(KeyCode.N))
@@ -171,7 +171,7 @@ public class SCR_DoritoMov : MonoBehaviour
             SkribuString("Prueba");
         else if (Input.GetKeyDown(KeyCode.Alpha0))
             SkribuString("P5429");
-        #endif
+#endif
 
         SekvaLetero();
         if (estasFinita)
