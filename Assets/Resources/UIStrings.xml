@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<languages>
+  <English>
+    
+    <string name="None">-</string>
+    <string name="txt_game_info_01">Start</string>
+    <string name="txt_game_info_02">Back</string>
+    <string name="txt_game_info_03">Credits</string>
+    <string name="txt_game_info_04">Change Language</string>
+    <string name="txt_game_info_05">Exit</string>
+    <string name="txt_game_info_06">Escape</string>
+
+    <string name="txt_credits_info">
+      Code
+      -Alain Barragan
+      -Moises Lopez
+
+      Art
+      -Hector Mora
+      -Afsisaj
+
+      Unity Asset Store
+      -Baltazar
+      -TAERAN
+      -BITGEM
+      -Raphael Ernaelsten
+    </string>
+    
+    <string name="txt_ques_01">pregunta</string>
+
+    <string name="txt_ans_01">respuesta</string>
+    
+  </English>
+  <Spanish>
+    
+    <string name="None">-</string>
+    <string name="txt_game_info_01">Iniciar</string>
+    <string name="txt_game_info_02">Atras</string>
+    <string name="txt_game_info_03">Creditos</string>
+    <string name="txt_game_info_04">Lenguaje</string>
+    <string name="txt_game_info_05">Salir</string>
+    <string name="txt_game_info_06">Escapar</string>
+
+    <string name="txt_credits_info">
+      Codigo
+      -Alain Barragan
+      -Moises Lopez
+
+      Arte
+      -Hector Mora
+      -Afsisaj
+
+      Unity Asset Store
+      -Baltazar
+      -TAERAN
+      -BITGEM
+      -Raphael Ernaelsten
+    </string>
+
+    <string name="txt_ques_01">pregunta</string>
+
+    <string name="txt_ans_01">respuesta</string>
+
+  </Spanish>
+</languages>
