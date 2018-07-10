@@ -11,19 +11,21 @@
     <string name="txt_game_info_06">Escape</string>
 
     <string name="txt_credits_info">
-      Code
+      Codigo
       -Alain Barragan
       -Moises Lopez
 
-      Art
-      -Hector Mora
-      -Afsisaj
+      Arte
+      -Hector Mora (Uniat chan)
+      -Afsisaj (Monika)
+      -Paula Baptista (dafont.com)
 
       Unity Asset Store
-      -Baltazar
-      -TAERAN
-      -BITGEM
-      -Raphael Ernaelsten
+      -Baltazar (models)
+      -TAERAN (models)
+      -BITGEM (candelabra model)
+      -Raphael Ernaelsten (Light effects)
+      -Neocrey (audio)
     </string>
     
     <string name="txt_ques_01">pregunta</string>
@@ -47,14 +49,16 @@
       -Moises Lopez
 
       Arte
-      -Hector Mora
-      -Afsisaj
+      -Hector Mora (Uniat chan)
+      -Afsisaj (Monika)
+      -Paula Baptista (dafont.com)
 
       Unity Asset Store
-      -Baltazar
-      -TAERAN
-      -BITGEM
-      -Raphael Ernaelsten
+      -Baltazar (modelos)
+      -TAERAN (modelos)
+      -BITGEM (modelo velas)
+      -Raphael Ernaelsten (efectos de luz)
+      -Neocrey (audio)
     </string>
 
     <string name="txt_ques_01">pregunta</string>
