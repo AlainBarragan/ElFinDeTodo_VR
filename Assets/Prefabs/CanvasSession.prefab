@@ -847,6 +847,7 @@ MonoBehaviour:
   - {fileID: 1318453184392012}
   - {fileID: 1388857181040636}
   SE_session: {fileID: 1450329933784278}
+  StartButton: {fileID: 1450329933784278}
 --- !u!114 &114225377597653278
 MonoBehaviour:
   m_ObjectHideFlags: 1

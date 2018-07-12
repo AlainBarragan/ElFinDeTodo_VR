@@ -211,16 +211,16 @@
     <string name="txt_ans_10_1">Cercas</string>
     <string name="txt_ans_10_2">Aqui</string>
 
-    <string name="txt_afi_01">¡Apartate!</string>
-    <string name="txt_afi_02">¡Me desagradas!</string>
-    <string name="txt_afi_03">¡Sal de aqui!</string>
-    <string name="txt_afi_04">¡No te tengo miedo!</string>
-    <string name="txt_afi_05">¡No me intimidas!</string>
-    <string name="txt_afi_06">¡Me das lastima!</string>
-    <string name="txt_afi_07">¡No tienes poder sobre mi!</string>
-    <string name="txt_afi_08">¡No podras quedarte!</string>
-    <string name="txt_afi_09">¡Jamas encontraras paz!</string>
-    <string name="txt_afi_10">¡Nunca seras libre!</string>
+    <string name="txt_afi_0">¡Apartate!</string>
+    <string name="txt_afi_1">¡Me desagradas!</string>
+    <string name="txt_afi_2">¡Sal de aqui!</string>
+    <string name="txt_afi_3">¡No te tengo miedo!</string>
+    <string name="txt_afi_4">¡No me intimidas!</string>
+    <string name="txt_afi_5">¡Me das lastima!</string>
+    <string name="txt_afi_6">¡No tienes poder sobre mi!</string>
+    <string name="txt_afi_7">¡No podras quedarte!</string>
+    <string name="txt_afi_8">¡Jamas encontraras paz!</string>
+    <string name="txt_afi_9">¡Nunca seras libre!</string>
 
   </Spanish>
 </languages>
