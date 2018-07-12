@@ -165,7 +165,7 @@
     
     <string name="txt_ans_01_0">Si</string>
     <string name="txt_ans_01_1">No</string>
-    <string name="txt_ans_01_2">Talvez</string>
+    <string name="txt_ans_01_2">Tal vez</string>
 
     <string name="txt_ans_02_0">Espiritu</string>
     <string name="txt_ans_02_1">Conocido</string>
@@ -223,4 +223,115 @@
     <string name="txt_afi_9">¡Nunca seras libre!</string>
 
   </Spanish>
+  <Esperanto>
+	
+    <string name="None">-</string>
+    <string name="txt_game_info_01">Komencita</string>
+    <string name="txt_game_info_02">Malantaŭen</string>
+    <string name="txt_game_info_03">Kreditoj</string>
+    <string name="txt_game_info_04">Lingvo</string>
+    <string name="txt_game_info_05">Eliru</string>
+    <string name="txt_game_info_06">Eskapi</string>
+
+    <string name="txt_credits_info">
+      Kodo
+      -Alain Barragan
+      -Moises Lopez
+
+      Arto
+      -Hector Mora (Uniat chan)
+      -Afsisaj (Monika)
+      -Paula Baptista (dafont.com)
+
+      Unity Asset Store
+      -Baltazar (Modeloj)
+      -TAERAN (Modeloj)
+      -BITGEM (Modeloj kandelo)
+      -Raphael Ernaelsten (Malpezaj efikoj)
+      -Neocrey (Sono)
+    </string>
+
+    <string name="txt_ques_01_0">Ĉu iu estas ĉi tie?</string>
+    <string name="txt_ques_01_1">Ĉu ni povas esti amikoj?</string>
+    <string name="txt_ques_01_2">Ĉu vi vundos min?</string>
+    <string name="txt_ques_01_3">Ĉu vi povas forlasi?</string>
+    <string name="txt_ques_01_4">Ĉu iu mortos baldaŭ?</string>
+    <string name="txt_ques_01_5">Ĉu mi estos riĉa?</string>
+    <string name="txt_ques_01_6">Ĉu mi estos feliĉa?</string>
+    <string name="txt_ques_01_7">Ĉu vi povas vidi nin?</string>
+    <string name="txt_ques_01_8">Ĉu vi povas resti?</string>
+    <string name="txt_ques_01_9">¿Eres malvado?</string>
+    <string name="txt_ques_02">Kiu estas tie?</string>
+    <string name="txt_ques_03">Kio estas via nomo?</string>
+    <string name="txt_ques_04">Kiel vi mortis?</string>
+    <string name="txt_ques_04_1">Kiel mi mortos?</string>
+    <string name="txt_ques_05">Kiam mi mortos?</string>
+    <string name="txt_ques_05_1">Kiam vi mortis?</string>
+    <string name="txt_ques_06">Kion vi volas?</string>
+    <string name="txt_ques_07_1">Kion vi deziras pro mono?</string>
+    <string name="txt_ques_07_2">Kion vi deziras pro amo?</string>
+    <string name="txt_ques_07_3">Kion vi deziras pro famo?</string>
+    <string name="txt_ques_08">Kion vi faris antaŭe?</string>
+    <string name="txt_ques_09">Kio estas via sekso?</string>
+    <string name="txt_ques_10">Kie vi vivis antaŭe?</string>
+    
+    <string name="txt_ans_01_0">Jes</string>
+    <string name="txt_ans_01_1">Ne</string>
+    <string name="txt_ans_01_2">Eble</string>
+
+    <string name="txt_ans_02_0">Spirito</string>
+    <string name="txt_ans_02_1">Konata</string>
+    <string name="txt_ans_02_2">Demono</string>
+
+    <string name="txt_ans_03_0">Val</string>
+    <string name="txt_ans_03_1">Belcebu</string>
+    <string name="txt_ans_03_2">Abadon</string>
+    <string name="txt_ans_03_3">Belfegor</string>
+    <string name="txt_ans_03_4">Asmodeo</string>
+
+    <string name="txt_ans_04_0">Memmortigo</string>
+    <string name="txt_ans_04_1">Murdita</string>
+    <string name="txt_ans_04_2">Akcidento</string>
+    <string name="txt_ans_04_3">Malsano</string>
+    <string name="txt_ans_04_4">Maljuneco</string>
+
+    <string name="txt_ans_05_0">R</string>
+    <string name="txt_ans_05_1">Tagoj</string>
+    <string name="txt_ans_05_2">Monatoj</string>
+    <string name="txt_ans_05_3">Jaroj</string>
+    <string name="txt_ans_05_4">Neniam</string>
+
+    <string name="txt_ans_06_0">Venĝo</string>
+    <string name="txt_ans_06_1">Resti</string>
+    <string name="txt_ans_06_2">Mesaĝo</string>
+
+    <string name="txt_ans_07_0">Animo</string>
+    <string name="txt_ans_07_1">Ofero</string>
+    <string name="txt_ans_07_2">Lojaleco</string>
+
+    <string name="txt_ans_08_0">Murdisto</string>
+    <string name="txt_ans_08_1">Cultisto</string>
+    <string name="txt_ans_08_2">Laboristo</string>
+    <string name="txt_ans_08_3">Studento</string>
+    <string name="txt_ans_08_4">Vagabundo</string>
+
+    <string name="txt_ans_09_0">Viro</string>
+    <string name="txt_ans_09_1">Virino</string>
+    <string name="txt_ans_09_2">Neniu</string>
+
+    <string name="txt_ans_10_0">For</string>
+    <string name="txt_ans_10_1">Proksimaj</string>
+    <string name="txt_ans_10_2">Ĉi tie</string>
+
+    <string name="txt_afi_0">¡Apartate!</string>
+    <string name="txt_afi_1">¡Me desagradas!</string>
+    <string name="txt_afi_2">¡Sal de aqui!</string>
+    <string name="txt_afi_3">¡No te tengo miedo!</string>
+    <string name="txt_afi_4">¡No me intimidas!</string>
+    <string name="txt_afi_5">¡Me das lastima!</string>
+    <string name="txt_afi_6">¡No tienes poder sobre mi!</string>
+    <string name="txt_afi_7">¡No podras quedarte!</string>
+    <string name="txt_afi_8">¡Jamas encontraras paz!</string>
+    <string name="txt_afi_9">¡Nunca seras libre!</string>
+  </Esperanto>
 </languages>
