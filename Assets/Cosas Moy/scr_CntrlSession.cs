@@ -11,6 +11,8 @@ public class scr_CntrlSession : MonoBehaviour {
     public GameObject[] Preguntas = new GameObject[3];
     public GameObject SE_session;
 
+    Dictionary<string, string[]> Dialogo = new Dictionary<string, string[]>();
+
     private void Awake()
     {
         CS = this;
