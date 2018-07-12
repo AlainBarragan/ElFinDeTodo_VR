@@ -11,11 +11,11 @@
     <string name="txt_game_info_06">Escape</string>
 
     <string name="txt_credits_info">
-      Codigo
+      Code
       -Alain Barragan
       -Moises Lopez
 
-      Arte
+      Art
       -Hector Mora (Uniat chan)
       -Afsisaj (Monika)
       -Paula Baptista (dafont.com)
@@ -28,37 +28,37 @@
       -Neocrey (audio)
     </string>
 
-    <string name="txt_ques_01">¿Hay Alguien Aqui?</string>
-    <string name="txt_ques_01_1">¿Podemos ser amigos?</string>
-    <string name="txt_ques_01_2">¿Vas a dañarme?</string>
-    <string name="txt_ques_01_3">¿Puedes irte?</string>
-    <string name="txt_ques_01_4">¿Morira alguien pronto?</string>
-    <string name="txt_ques_01_5">¿Sere rico?</string>
-    <string name="txt_ques_01_6">¿Sere feliz?</string>
-    <string name="txt_ques_01_7">¿Puedes vernos?</string>
-    <string name="txt_ques_01_8">¿Puedes quedarte?</string>
-    <string name="txt_ques_01_9">¿Eres malvado?</string>
-    <string name="txt_ques_02">¿Quien esta alli?</string>
-    <string name="txt_ques_03">¿Como te llamas?</string>
-    <string name="txt_ques_04">¿Como moriste?</string>
-    <string name="txt_ques_04_1">¿Como morire?</string>
-    <string name="txt_ques_05">¿Cuando morire?</string>
-    <string name="txt_ques_05_1">¿Cuando moriste?</string>
-    <string name="txt_ques_06">¿Que quieres?</string>
-    <string name="txt_ques_07_1">¿Que quieres para obtener Dinero?</string>
-    <string name="txt_ques_07_2">¿Que quieres para obtener Amor?</string>
-    <string name="txt_ques_07_3">¿Que quieres para obtener Fama?</string>
-    <string name="txt_ques_08">¿Que hacias antes?</string>
-    <string name="txt_ques_09">¿Que genero eres?</string>
-    <string name="txt_ques_10">¿En donde vivias antes?</string>
+    <string name="txt_ques_01">Is there anyone here?</string>
+    <string name="txt_ques_01_1">Can we be friends?</string>
+    <string name="txt_ques_01_2">Are you going to hurt me?</string>
+    <string name="txt_ques_01_3">Can you go away?</string>
+    <string name="txt_ques_01_4">Will someone die soon?</string>
+    <string name="txt_ques_01_5">Will I be rich?</string>
+    <string name="txt_ques_01_6">Are you happy?</string>
+    <string name="txt_ques_01_7">Can you see us?</string>
+    <string name="txt_ques_01_8">Can you stay?</string>
+    <string name="txt_ques_01_9">Are you evil?</string>
+    <string name="txt_ques_02">Who's there?</string>
+    <string name="txt_ques_03">What's your name?</string>
+    <string name="txt_ques_04">How did you died?</string>
+    <string name="txt_ques_04_1">How will I die?</string>
+    <string name="txt_ques_05">When will I die?</string>
+    <string name="txt_ques_05_1">When did you died?</string>
+    <string name="txt_ques_06">What do you want?</string>
+    <string name="txt_ques_07_1">What do you want for money?</string>
+    <string name="txt_ques_07_2">What do you want for love?</string>
+    <string name="txt_ques_07_3">What do you want for fame?</string>
+    <string name="txt_ques_08">What did you do before?</string>
+    <string name="txt_ques_09">What's your gender?</string>
+    <string name="txt_ques_10">Where did you live?</string>
 
-    <string name="txt_ans_01_01">Si</string>
+    <string name="txt_ans_01_01">Yes</string>
     <string name="txt_ans_01_02">No</string>
-    <string name="txt_ans_01_03">Talvez</string>
+    <string name="txt_ans_01_03">Maybe</string>
 
-    <string name="txt_ans_02_01">Espiritu</string>
-    <string name="txt_ans_02_02">Conocido</string>
-    <string name="txt_ans_02_03">Demonio</string>
+    <string name="txt_ans_02_01">Spirit</string>
+    <string name="txt_ans_02_02">Someone you know</string>
+    <string name="txt_ans_02_03">Demon</string>
 
     <string name="txt_ans_03_01">Val</string>
     <string name="txt_ans_03_02">Belcebu</string>
@@ -66,49 +66,49 @@
     <string name="txt_ans_03_04">Belfegor</string>
     <string name="txt_ans_03_05">Asmodeo</string>
 
-    <string name="txt_ans_04_01">Suicidio</string>
-    <string name="txt_ans_04_02">Asesinado</string>
-    <string name="txt_ans_04_03">Accidente</string>
-    <string name="txt_ans_04_04">Enfermedad</string>
-    <string name="txt_ans_04_05">Vejes</string>
+    <string name="txt_ans_04_01">Suicide</string>
+    <string name="txt_ans_04_02">Murdered</string>
+    <string name="txt_ans_04_03">Accident</string>
+    <string name="txt_ans_04_04">Sickness</string>
+    <string name="txt_ans_04_05">Old age</string>
 
     <string name="txt_ans_05_01">R</string>
-    <string name="txt_ans_05_02">Dias</string>
-    <string name="txt_ans_05_03">Meses</string>
-    <string name="txt_ans_05_04">Años</string>
+    <string name="txt_ans_05_02">Days</string>
+    <string name="txt_ans_05_03">Months</string>
+    <string name="txt_ans_05_04">Years</string>
 
-    <string name="txt_ans_06_01">Venganza</string>
-    <string name="txt_ans_06_02">Quedarme</string>
-    <string name="txt_ans_06_03">Mensaje</string>
+    <string name="txt_ans_06_01">Vengeance</string>
+    <string name="txt_ans_06_02">Stay here</string>
+    <string name="txt_ans_06_03">Message</string>
 
-    <string name="txt_ans_07_01">Alma</string>
-    <string name="txt_ans_07_02">Sacrificio</string>
-    <string name="txt_ans_07_03">Lealtad</string>
+    <string name="txt_ans_07_01">Soul</string>
+    <string name="txt_ans_07_02">Sacrifice</string>
+    <string name="txt_ans_07_03">Loyalty</string>
 
-    <string name="txt_ans_08_01">Asesino</string>
-    <string name="txt_ans_08_02">Cultista</string>
-    <string name="txt_ans_08_03">Trabajador</string>
-    <string name="txt_ans_08_04">Estudiante</string>
-    <string name="txt_ans_08_05">Vagabundo</string>
+    <string name="txt_ans_08_01">Assassin</string>
+    <string name="txt_ans_08_02">Cultist</string>
+    <string name="txt_ans_08_03">Worker</string>
+    <string name="txt_ans_08_04">Student</string>
+    <string name="txt_ans_08_05">Homeless</string>
 
-    <string name="txt_ans_09_01">Hombre</string>
-    <string name="txt_ans_09_02">Mujer</string>
-    <string name="txt_ans_09_03">Ninguno</string>
+    <string name="txt_ans_09_01">Man</string>
+    <string name="txt_ans_09_02">Woman</string>
+    <string name="txt_ans_09_03">None</string>
 
-    <string name="txt_ans_10_01">Lejos</string>
-    <string name="txt_ans_10_02">Cercas</string>
-    <string name="txt_ans_10_03">Aqui</string>
+    <string name="txt_ans_10_01">Far</string>
+    <string name="txt_ans_10_02">Close</string>
+    <string name="txt_ans_10_03">Here</string>
 
-    <string name="txt_afi_01">¡Apartate!</string>
-    <string name="txt_afi_02">¡Me desagradas!</string>
-    <string name="txt_afi_03">¡Sal de aqui!</string>
-    <string name="txt_afi_04">¡No te tengo miedo!</string>
-    <string name="txt_afi_05">¡No me intimidas!</string>
-    <string name="txt_afi_06">¡Me das lastima!</string>
-    <string name="txt_afi_07">¡No tienes poder sobre mi!</string>
-    <string name="txt_afi_08">¡No podras quedarte!</string>
-    <string name="txt_afi_09">¡Jamas encontraras paz!</string>
-    <string name="txt_afi_10">¡Nunca seras libre!</string>
+    <string name="txt_afi_01">Get away!</string>
+    <string name="txt_afi_02">I don't like you!</string>
+    <string name="txt_afi_03">Get away from here!</string>
+    <string name="txt_afi_04">I'm not afraid of you!</string>
+    <string name="txt_afi_05">You can't intimidate me!</string>
+    <string name="txt_afi_06">I feel bad for you!</string>
+    <string name="txt_afi_07">You have no power over me!</string>
+    <string name="txt_afi_08">You can't stay here!</string>
+    <string name="txt_afi_09">You'll never get peace!</string>
+    <string name="txt_afi_10">You'll never be free!</string>
     
   </English>
   <Spanish>
