@@ -23,6 +23,7 @@ public class SCR_DemonLevel : MonoBehaviour
         else if (malboneco < 0)
             malboneco = 0;
         yield return new WaitForSeconds(110.0f - malboneco);
+        FindObjectOfType<SCR_UniatChan>().Llorar();
         auraVolume.density.injectionParameters.strength = malboneco * 0.01f;
         StartCoroutine(FaruMalbonajnAferojn());
     }

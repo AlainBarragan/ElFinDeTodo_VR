@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SCR_UniatChan : MonoBehaviour
 {
-    Animator anim;
+    private Animator anim;
 
     private void Start()
     {
@@ -14,5 +12,11 @@ public class SCR_UniatChan : MonoBehaviour
     private void Update()
     {
         anim.SetLayerWeight(1, SCR_DemonLevel.malboneco);
+        anim.SetBool("flotar", SCR_DemonLevel.malboneco > 80);
+    }
+
+    public void Llorar()
+    {
+        anim.SetTrigger("Llorar");
     }
 }
