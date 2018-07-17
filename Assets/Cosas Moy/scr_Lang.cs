@@ -26,6 +26,11 @@ public class scr_Lang: MonoBehaviour {
             language = "Spanish";
         }
 
+        if (Op_Leng == 2)
+        {
+            language = "Esperanto";
+        }
+
         TextAsset textAsset = (TextAsset)Resources.Load("UIStrings");
         XmlDocument xml = new XmlDocument();
         xml.LoadXml(textAsset.text);

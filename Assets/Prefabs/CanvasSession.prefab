@@ -512,7 +512,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65052527933292938
 BoxCollider:
@@ -524,7 +524,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65110722199944012
 BoxCollider:
@@ -536,7 +536,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65226609317952216
 BoxCollider:
@@ -548,7 +548,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65389413333027462
 BoxCollider:
@@ -560,7 +560,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65533689844697476
 BoxCollider:
@@ -572,7 +572,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65878611804746062
 BoxCollider:
@@ -584,7 +584,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65887095785022332
 BoxCollider:
@@ -596,7 +596,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65956599355647216
 BoxCollider:
@@ -608,7 +608,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 64, z: 10}
+  m_Size: {x: 200, y: 32, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95976142023407744
 Animator:
@@ -653,7 +653,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -671,7 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 0
+  IdButton: 3
+  idQs: 
 --- !u!114 &114047867176531884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -771,7 +772,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 2
+  IdButton: 1
+  idQs: 
 --- !u!114 &114106872082267932
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -783,7 +785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 2
+  IdButton: 4
+  idQs: 
 --- !u!114 &114141690258454600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -843,11 +846,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   T_Respuesta: {fileID: 114668152046406680}
   Preguntas:
-  - {fileID: 1489525214324084}
-  - {fileID: 1318453184392012}
-  - {fileID: 1388857181040636}
-  SE_session: {fileID: 1450329933784278}
-  StartButton: {fileID: 1450329933784278}
+  - {fileID: 114027561011588958}
+  - {fileID: 114930378213061732}
+  - {fileID: 114396197496248874}
+  Btn_StartButton: {fileID: 1450329933784278}
+  Btn_Credits: {fileID: 1683029909063596}
+  Btn_Lang: {fileID: 1478147332104520}
+  Btn_Exit: {fileID: 1606649336320140}
+  Btn_Back: {fileID: 1335498847147344}
+  Btn_Escapar: {fileID: 1770832871773424}
+  Credits: {fileID: 1298850549037368}
+  Menu: {fileID: 1423454366706220}
+  Questions: {fileID: 1263530628911536}
+  Title: {fileID: 1650954122081266}
 --- !u!114 &114225377597653278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1003,7 +1014,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1035,7 +1046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ba098d6829ae02448a0c90f54e583c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: Escape
+  ID: txt_game_info_06
 --- !u!114 &114476651447893308
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1206,7 +1217,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1257,8 +1268,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "  Codigo\n-Alain Barragan\n-Moises Lopez\n\n  Arte\n-Hector Mora\n-Afsisaj\n\n
-    \ Unity Asset Store\n-Baltazar\n-TAERAN\n-BITGEM\n-Raphael Ernaelsten"
+  m_Text: "      Codigo\r\n      -Alain Barragan\r\n      -Moises Lopez\r\n\r\n      Arte\r\n
+    \     -Hector Mora (Uniat chan)\r\n      -Afsisaj (Monika)\r\n      -Paula Baptista
+    (dafont.com)\r\n\r\n      Unity Asset Store\r\n      -Baltazar (modelos)\r\n      -TAERAN
+    (modelos)\r\n      -BITGEM (modelo velas)\r\n      -Raphael Ernaelsten (efectos
+    de luz)\r\n      -Neocrey (audio)"
 --- !u!114 &114668152046406680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1344,7 +1358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 0
+  IdButton: 5
+  idQs: 
 --- !u!114 &114696012852447130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1356,7 +1371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 3
+  IdButton: 5
+  idQs: 
 --- !u!114 &114702063992105978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1383,7 +1399,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1533,7 +1549,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 3
+  IdButton: 2
+  idQs: 
 --- !u!114 &114874500568346720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1545,7 +1562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 0
+  IdButton: -1
+  idQs: 
 --- !u!114 &114913165871795918
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1621,7 +1639,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1695,7 +1713,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1713,7 +1731,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 1
+  IdButton: 3
+  idQs: 
 --- !u!114 &114996910996411620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1725,7 +1744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a206d81e728409744ac89bb4e8386587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdButton: 1
+  IdButton: 0
+  idQs: 
 --- !u!222 &222060043881223000
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -1999,9 +2019,9 @@ RectTransform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
   m_AnchorMin: {x: 0.53900003, y: 0.43386158}
-  m_AnchorMax: {x: 0.72320086, y: 0.7728358}
-  m_AnchoredPosition: {x: -0.7568512, y: -0.86750793}
-  m_SizeDelta: {x: 12.289459, y: 1.2243347}
+  m_AnchorMax: {x: 0.72210145, y: 0.8021539}
+  m_AnchoredPosition: {x: -0.14723206, y: -1.0743484}
+  m_SizeDelta: {x: 13.5086975, y: 0.81064796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224277138901500668
 RectTransform:
