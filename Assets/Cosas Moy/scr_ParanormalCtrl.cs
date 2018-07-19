@@ -31,7 +31,9 @@ public class scr_ParanormalCtrl : MonoBehaviour {
         {
             case 0:
                 {
-                    Pobjects[Random.Range(0, Pobjects.Length)].AddForce(new Vector3(Random.Range(4, 12), Random.Range(4, 12), Random.Range(4, 12)), ForceMode.Impulse);
+                    int idr = Random.Range(0, Pobjects.Length);
+                    Pobjects[idr].AddForce(new Vector3(Random.Range(4, 12), Random.Range(4, 12), Random.Range(4, 12)), ForceMode.Impulse);
+                    Pobjects[idr].useGravity = true;
                 }
                 break;
             case 1:

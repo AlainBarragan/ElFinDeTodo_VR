@@ -149,7 +149,7 @@
     <string name="txt_ques_01_7">¿Puedes vernos?</string>
     <string name="txt_ques_01_8">¿Puedes quedarte?</string>
     <string name="txt_ques_01_9">¿Eres malvado?</string>
-    <string name="txt_ques_02">¿Quien esta alli?</string>
+    <string name="txt_ques_02">¿Quien eres?</string>
     <string name="txt_ques_03">¿Como te llamas?</string>
     <string name="txt_ques_04">¿Como moriste?</string>
     <string name="txt_ques_04_1">¿Como morire?</string>
@@ -301,7 +301,7 @@
     <string name="txt_ans_05_3">Jaroj</string>
     <string name="txt_ans_05_4">Neniam</string>
 
-    <string name="txt_ans_06_0">Venĝo</string>
+    <string name="txt_ans_06_0">Vengo</string>
     <string name="txt_ans_06_1">Resti</string>
     <string name="txt_ans_06_2">Mesaĝo</string>
 
@@ -321,11 +321,11 @@
 
     <string name="txt_ans_10_0">For</string>
     <string name="txt_ans_10_1">Proksimaj</string>
-    <string name="txt_ans_10_2">Ĉi tie</string>
+    <string name="txt_ans_10_2">Ci tie</string>
 
     <string name="txt_afi_0">Foriru de mi!</string>
-    <string name="txt_afi_1">Mi ne ŝatas vin!</string>
-    <string name="txt_afi_2">Eliru ĉi tie!</string>
+    <string name="txt_afi_1">Mi ne satas vin!</string>
+    <string name="txt_afi_2">Eliru ci tie!</string>
     <string name="txt_afi_3">Mi ne timas vin!</string>
     <string name="txt_afi_4">Vi ne timigas min!</string>
     <string name="txt_afi_5">Mi kompatas vin!</string>

@@ -22,7 +22,7 @@ public class scr_PhyButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (HandOn)
+		if (HandOn && Input.GetMouseButton(0))
         {
             if (select_time<1f)
             {

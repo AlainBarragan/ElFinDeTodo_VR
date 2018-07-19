@@ -4,8 +4,8 @@ public class SCR_DoritoMov : MonoBehaviour
 {
     private bool estasFinita;
     private bool estasTusita;
-    private int indekso;
-    private string vortoj;
+    public int indekso;
+    public string vortoj;
     private float atendoTempon;
     private Transform aktualaPozicio, sekvaPozicio;
     private Transform[] leteroPozicio;
