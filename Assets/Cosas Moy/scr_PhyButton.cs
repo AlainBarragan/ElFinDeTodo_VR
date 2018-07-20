@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.UI;
 
 public class scr_PhyButton : MonoBehaviour {
@@ -17,12 +18,17 @@ public class scr_PhyButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        Bar = GetComponent<Image>();	
-	}
+        Bar = GetComponent<Image>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		if (HandOn && Input.GetMouseButton(0))
+
+        bool InputMode = XRDevice.isPresent;
+        if (!InputMode)
+            InputMode = Input.GetMouseButton(0);
+
+        if (HandOn && InputMode)
         {
             if (select_time<1f)
             {
