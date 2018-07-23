@@ -28,7 +28,7 @@
       -Neocrey (audio)
     </string>
 
-    <string name="txt_ques_01">Is there anyone here?</string>
+    <string name="txt_ques_01_0">Is there anyone here?</string>
     <string name="txt_ques_01_1">Can we be friends?</string>
     <string name="txt_ques_01_2">Are you going to hurt me?</string>
     <string name="txt_ques_01_3">Can you go away?</string>
