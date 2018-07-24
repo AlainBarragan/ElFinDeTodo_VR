@@ -28,6 +28,7 @@ public class scr_CntrlSession : MonoBehaviour {
     public AudioSource as_Start;
 
     public GameObject Ghost;
+    public scr_FxsGhost GhostSonds;
     bool ShowGhost = false;
 
     Dictionary<string, string[]> Dialogo = new Dictionary<string, string[]>();
@@ -211,6 +212,7 @@ public class scr_CntrlSession : MonoBehaviour {
         Btn_StartButton.SetActive(false);
         SetQuestions();
         as_Start.Play();
+        GhostSonds.StartEffects();
     }
 
     public void SelectQuest(int _id)
@@ -223,12 +225,14 @@ public class scr_CntrlSession : MonoBehaviour {
             if (Dorito)
                 Dorito.SkribuYes();
             CurrentAnsw = scr_Lang.GetText(idresp);
+            T_Respuesta.text = scr_Lang.GetText(idresp);
         }
         else if (idresp == "txt_ans_01_2")
         {
             if (Dorito)
                 Dorito.SkribuNo();
             CurrentAnsw = scr_Lang.GetText(idresp);
+            T_Respuesta.text = scr_Lang.GetText(idresp);
         }
         else
         {
@@ -248,17 +252,14 @@ public class scr_CntrlSession : MonoBehaviour {
         }
         if (idstring.Contains("afi"))
         {
-            SCR_DemonLevel.malboneco += 20;
-            if (Monika)
-            {
-                Monika.DoParanormalActivity();
-            }
+            SCR_DemonLevel.malboneco += 10;
+            Monika.DoParanormalActivity();
         }
         else
         {
-            SCR_DemonLevel.malboneco += 10;
+            SCR_DemonLevel.malboneco += 5;
             int r = Random.Range(0, 2);
-            if (Monika && r == 0)
+            if (SCR_DemonLevel.malboneco>25)
             {
                 Monika.DoParanormalActivity();
             }
@@ -272,12 +273,12 @@ public class scr_CntrlSession : MonoBehaviour {
         }
         if (LevelAmbientSound == 6)
         {
-            AmbientSounds.transform.GetChild(0).GetComponent<AudioSource>().Stop();
+            AmbientSounds.transform.GetChild(0).GetComponent<AudioSource>().volume = 0.75f;
             AmbientSounds.transform.GetChild(2).GetComponent<AudioSource>().Play();
         }
         if (LevelAmbientSound == 9)
         {
-            AmbientSounds.transform.GetChild(1).GetComponent<AudioSource>().Stop();
+            AmbientSounds.transform.GetChild(1).GetComponent<AudioSource>().volume = 0.75f;
             AmbientSounds.transform.GetChild(3).GetComponent<AudioSource>().Play();
         }
 
@@ -293,9 +294,9 @@ public class scr_CntrlSession : MonoBehaviour {
    IEnumerator EndGame()
     {
         yield return new WaitForSeconds(Random.Range(4f,8f));
-        Ghost.SetActive(true);
-        yield return new WaitForSeconds(1f);
         Ghost.GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(0.1f);
+        Ghost.SetActive(true);
     }
 
     public void SetQuestions()
