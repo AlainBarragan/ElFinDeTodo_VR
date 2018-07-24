@@ -24,11 +24,16 @@ public class scr_CntrlSession : MonoBehaviour {
     SCR_DoritoMov Dorito;
     scr_ParanormalCtrl Monika;
 
+    public AudioSource as_Select;
+    public AudioSource as_Start;
+
     Dictionary<string, string[]> Dialogo = new Dictionary<string, string[]>();
 
     List<string> AllQues = new List<string>();
 
     string CurrentAnsw = "";
+
+    public GameObject AmbientSounds;
 
     private void Awake()
     {
@@ -201,6 +206,7 @@ public class scr_CntrlSession : MonoBehaviour {
         Btn_Escapar.SetActive(true);
         Btn_StartButton.SetActive(false);
         SetQuestions();
+        as_Start.Play();
     }
 
     public void SelectQuest(int _id)
@@ -253,7 +259,25 @@ public class scr_CntrlSession : MonoBehaviour {
                 Monika.DoParanormalActivity();
             }
         }
-            
+         
+        if (SCR_DemonLevel.malboneco>20)
+        {
+            AmbientSounds.transform.GetChild(0).GetComponent<AudioSource>().Play();
+        }
+        if (SCR_DemonLevel.malboneco > 40)
+        {
+            AmbientSounds.transform.GetChild(1).GetComponent<AudioSource>().Play();
+        }
+        if (SCR_DemonLevel.malboneco > 60)
+        {
+            AmbientSounds.transform.GetChild(2).GetComponent<AudioSource>().Play();
+        }
+        if (SCR_DemonLevel.malboneco > 80)
+        {
+            AmbientSounds.transform.GetChild(0).GetComponent<AudioSource>().Stop();
+            AmbientSounds.transform.GetChild(3).GetComponent<AudioSource>().Play();
+        }
+
         SetQuestion(_id);
     }
 

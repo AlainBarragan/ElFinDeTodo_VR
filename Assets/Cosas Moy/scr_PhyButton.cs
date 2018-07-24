@@ -77,16 +77,19 @@ public class scr_PhyButton : MonoBehaviour {
             case 2: // Questions
                 {
                     scr_CntrlSession.CS.SelectQuest(IdButton);
+                    scr_CntrlSession.CS.as_Select.Play();
                 }
                 break;
             case 3: //Credits
                 {
                     scr_CntrlSession.CS.SwitchCredits();
+                    scr_CntrlSession.CS.as_Select.Play();
                 }
                 break;
             case 4:
                 {
                     scr_CntrlSession.CS.ChangeLang();
+                    scr_CntrlSession.CS.as_Select.Play();
                 }
                 break;
             case 5:
