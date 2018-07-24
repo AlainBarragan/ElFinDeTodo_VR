@@ -223,16 +223,22 @@ public class scr_CntrlSession : MonoBehaviour {
         if (idresp == "txt_ans_01_0")
         {
             if (Dorito)
+            {
+                Dorito.SkribuString(scr_Lang.GetText(idresp));
                 Dorito.SkribuYes();
+            }
             CurrentAnsw = scr_Lang.GetText(idresp);
-            T_Respuesta.text = scr_Lang.GetText(idresp);
+            
         }
         else if (idresp == "txt_ans_01_2")
         {
             if (Dorito)
+            {
+                Dorito.SkribuString(scr_Lang.GetText(idresp));
                 Dorito.SkribuNo();
+            }
             CurrentAnsw = scr_Lang.GetText(idresp);
-            T_Respuesta.text = scr_Lang.GetText(idresp);
+            
         }
         else
         {
