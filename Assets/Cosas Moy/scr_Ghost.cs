@@ -11,6 +11,6 @@ public class scr_Ghost : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(transform.forward*Time.deltaTime);
+        transform.Translate(transform.forward*Time.deltaTime*4f);
 	}
 }

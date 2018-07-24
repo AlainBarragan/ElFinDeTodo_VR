@@ -294,7 +294,7 @@ public class scr_CntrlSession : MonoBehaviour {
     {
         yield return new WaitForSeconds(Random.Range(4f,8f));
         Ghost.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         Ghost.GetComponent<AudioSource>().Play();
     }
 

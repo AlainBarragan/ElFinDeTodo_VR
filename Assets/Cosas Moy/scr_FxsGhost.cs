@@ -5,7 +5,7 @@ using UnityEngine;
 public class scr_FxsGhost : MonoBehaviour {
 	
 	// Update is called once per frame
-	void Update () {
+	void Start () {
         StartCoroutine(GhostEvents());
 	}
 
