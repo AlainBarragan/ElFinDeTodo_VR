@@ -17,7 +17,6 @@
 
       Art
       -Hector Mora (Uniat chan)
-      -Afsisaj (Monika)
       -Paula Baptista (dafont.com)
 
       Unity Asset Store
@@ -52,63 +51,63 @@
     <string name="txt_ques_09">What's your gender?</string>
     <string name="txt_ques_10">Where did you live?</string>
 
-    <string name="txt_ans_01_01">Yes</string>
-    <string name="txt_ans_01_02">No</string>
-    <string name="txt_ans_01_03">Maybe</string>
+    <string name="txt_ans_01_0">Yes</string>
+    <string name="txt_ans_01_1">No</string>
+    <string name="txt_ans_01_2">Maybe</string>
 
-    <string name="txt_ans_02_01">Spirit</string>
-    <string name="txt_ans_02_02">Someone you know</string>
-    <string name="txt_ans_02_03">Demon</string>
+    <string name="txt_ans_02_0">Spirit</string>
+    <string name="txt_ans_02_1">Someone you know</string>
+    <string name="txt_ans_02_2">Demon</string>
 
-    <string name="txt_ans_03_01">Val</string>
-    <string name="txt_ans_03_02">Belcebu</string>
-    <string name="txt_ans_03_03">Abadon</string>
-    <string name="txt_ans_03_04">Belfegor</string>
-    <string name="txt_ans_03_05">Asmodeo</string>
+    <string name="txt_ans_03_0">Val</string>
+    <string name="txt_ans_03_1">Belcebu</string>
+    <string name="txt_ans_03_2">Abadon</string>
+    <string name="txt_ans_03_3">Belfegor</string>
+    <string name="txt_ans_03_4">Asmodeo</string>
 
-    <string name="txt_ans_04_01">Suicide</string>
-    <string name="txt_ans_04_02">Murdered</string>
-    <string name="txt_ans_04_03">Accident</string>
-    <string name="txt_ans_04_04">Sickness</string>
-    <string name="txt_ans_04_05">Old age</string>
+    <string name="txt_ans_04_0">Suicide</string>
+    <string name="txt_ans_04_1">Murdered</string>
+    <string name="txt_ans_04_2">Accident</string>
+    <string name="txt_ans_04_3">Sickness</string>
+    <string name="txt_ans_04_4">Old age</string>
 
-    <string name="txt_ans_05_01">R</string>
-    <string name="txt_ans_05_02">Days</string>
-    <string name="txt_ans_05_03">Months</string>
-    <string name="txt_ans_05_04">Years</string>
+    <string name="txt_ans_05_0">R</string>
+    <string name="txt_ans_05_1">Days</string>
+    <string name="txt_ans_05_2">Months</string>
+    <string name="txt_ans_05_3">Years</string>
 
-    <string name="txt_ans_06_01">Vengeance</string>
-    <string name="txt_ans_06_02">Stay here</string>
-    <string name="txt_ans_06_03">Message</string>
+    <string name="txt_ans_06_0">Vengeance</string>
+    <string name="txt_ans_06_1">Stay here</string>
+    <string name="txt_ans_06_2">Message</string>
 
-    <string name="txt_ans_07_01">Soul</string>
-    <string name="txt_ans_07_02">Sacrifice</string>
-    <string name="txt_ans_07_03">Loyalty</string>
+    <string name="txt_ans_07_0">Soul</string>
+    <string name="txt_ans_07_1">Sacrifice</string>
+    <string name="txt_ans_07_2">Loyalty</string>
 
-    <string name="txt_ans_08_01">Assassin</string>
-    <string name="txt_ans_08_02">Cultist</string>
-    <string name="txt_ans_08_03">Worker</string>
-    <string name="txt_ans_08_04">Student</string>
-    <string name="txt_ans_08_05">Homeless</string>
+    <string name="txt_ans_08_0">Assassin</string>
+    <string name="txt_ans_08_1">Cultist</string>
+    <string name="txt_ans_08_2">Worker</string>
+    <string name="txt_ans_08_3">Student</string>
+    <string name="txt_ans_08_4">Homeless</string>
 
-    <string name="txt_ans_09_01">Man</string>
-    <string name="txt_ans_09_02">Woman</string>
-    <string name="txt_ans_09_03">None</string>
+    <string name="txt_ans_09_0">Man</string>
+    <string name="txt_ans_09_1">Woman</string>
+    <string name="txt_ans_09_2">None</string>
 
-    <string name="txt_ans_10_01">Far</string>
-    <string name="txt_ans_10_02">Close</string>
-    <string name="txt_ans_10_03">Here</string>
+    <string name="txt_ans_10_0">Far</string>
+    <string name="txt_ans_10_1">Close</string>
+    <string name="txt_ans_10_2">Here</string>
 
-    <string name="txt_afi_01">Get away!</string>
-    <string name="txt_afi_02">I don't like you!</string>
-    <string name="txt_afi_03">Get away from here!</string>
-    <string name="txt_afi_04">I'm not afraid of you!</string>
-    <string name="txt_afi_05">You can't intimidate me!</string>
-    <string name="txt_afi_06">I feel bad for you!</string>
-    <string name="txt_afi_07">You have no power over me!</string>
-    <string name="txt_afi_08">You can't stay here!</string>
-    <string name="txt_afi_09">You'll never get peace!</string>
-    <string name="txt_afi_10">You'll never be free!</string>
+    <string name="txt_afi_0">Get away!</string>
+    <string name="txt_afi_1">I don't like you!</string>
+    <string name="txt_afi_2">Get away from here!</string>
+    <string name="txt_afi_3">I'm not afraid of you!</string>
+    <string name="txt_afi_4">You can't intimidate me!</string>
+    <string name="txt_afi_5">I feel bad for you!</string>
+    <string name="txt_afi_6">You have no power over me!</string>
+    <string name="txt_afi_7">You can't stay here!</string>
+    <string name="txt_afi_8">You'll never get peace!</string>
+    <string name="txt_afi_9">You'll never be free!</string>
     
   </English>
   <Spanish>
@@ -128,7 +127,6 @@
 
       Arte
       -Hector Mora (Uniat chan)
-      -Afsisaj (Monika)
       -Paula Baptista (dafont.com)
 
       Unity Asset Store
@@ -240,7 +238,6 @@
 
       Arto
       -Hector Mora (Uniat chan)
-      -Afsisaj (Monika)
       -Paula Baptista (dafont.com)
 
       Unity Asset Store

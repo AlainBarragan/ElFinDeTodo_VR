@@ -27,6 +27,9 @@ public class scr_CntrlSession : MonoBehaviour {
     public AudioSource as_Select;
     public AudioSource as_Start;
 
+    public GameObject Ghost;
+    bool ShowGhost = false;
+
     Dictionary<string, string[]> Dialogo = new Dictionary<string, string[]>();
 
     List<string> AllQues = new List<string>();
@@ -34,6 +37,7 @@ public class scr_CntrlSession : MonoBehaviour {
     string CurrentAnsw = "";
 
     public GameObject AmbientSounds;
+    int LevelAmbientSound = 0;
 
     private void Awake()
     {
@@ -259,26 +263,39 @@ public class scr_CntrlSession : MonoBehaviour {
                 Monika.DoParanormalActivity();
             }
         }
-         
-        if (SCR_DemonLevel.malboneco>20)
-        {
-            AmbientSounds.transform.GetChild(0).GetComponent<AudioSource>().Play();
-        }
-        if (SCR_DemonLevel.malboneco > 40)
+
+        LevelAmbientSound++;
+
+        if (LevelAmbientSound == 3)
         {
             AmbientSounds.transform.GetChild(1).GetComponent<AudioSource>().Play();
         }
-        if (SCR_DemonLevel.malboneco > 60)
-        {
-            AmbientSounds.transform.GetChild(2).GetComponent<AudioSource>().Play();
-        }
-        if (SCR_DemonLevel.malboneco > 80)
+        if (LevelAmbientSound == 6)
         {
             AmbientSounds.transform.GetChild(0).GetComponent<AudioSource>().Stop();
+            AmbientSounds.transform.GetChild(2).GetComponent<AudioSource>().Play();
+        }
+        if (LevelAmbientSound == 9)
+        {
+            AmbientSounds.transform.GetChild(1).GetComponent<AudioSource>().Stop();
             AmbientSounds.transform.GetChild(3).GetComponent<AudioSource>().Play();
         }
 
+        if (SCR_DemonLevel.malboneco>=100 && !ShowGhost)
+        {
+            ShowGhost = true;
+            StartCoroutine(EndGame());
+        }
+
         SetQuestion(_id);
+    }
+
+   IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(Random.Range(4f,8f));
+        Ghost.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        Ghost.GetComponent<AudioSource>().Play();
     }
 
     public void SetQuestions()
