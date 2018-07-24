@@ -52,7 +52,7 @@ public class scr_ParanormalCtrl : MonoBehaviour {
                 }
                 break;
         }
-
+        FindObjectOfType<SCR_UniatChan>().Llorar();
         
     }
 

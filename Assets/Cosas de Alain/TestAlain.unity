@@ -754,7 +754,7 @@ Transform:
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_Children: []
   m_Father: {fileID: 1195513826}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &215294901
 AudioSource:
@@ -1041,7 +1041,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1328,7 +1328,7 @@ Transform:
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_Children: []
   m_Father: {fileID: 1195513826}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &369012240
 AudioSource:
@@ -1484,7 +1484,7 @@ Transform:
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_Children: []
   m_Father: {fileID: 1195513826}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &397740165
 AudioSource:
@@ -2217,10 +2217,10 @@ Transform:
   m_Children:
   - {fileID: 266152829}
   - {fileID: 716201251}
-  - {fileID: 369012239}
   - {fileID: 1342380701}
   - {fileID: 215294900}
   - {fileID: 397740164}
+  - {fileID: 369012239}
   m_Father: {fileID: 1820932706}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3360,7 +3360,7 @@ Transform:
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_Children: []
   m_Father: {fileID: 1195513826}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1342380702
 AudioSource:
@@ -4536,7 +4536,7 @@ Prefab:
     - target: {fileID: 224714498249617924, guid: 48df63db3f9ce834aa71533d3f08222b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -40.880962
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224170137695996100, guid: 48df63db3f9ce834aa71533d3f08222b,
         type: 2}
@@ -4556,7 +4556,7 @@ Prefab:
     - target: {fileID: 224170137695996100, guid: 48df63db3f9ce834aa71533d3f08222b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -122.64288
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224496106560371192, guid: 48df63db3f9ce834aa71533d3f08222b,
         type: 2}
@@ -4576,7 +4576,7 @@ Prefab:
     - target: {fileID: 224496106560371192, guid: 48df63db3f9ce834aa71533d3f08222b,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -204.40482
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114204509714920014, guid: 48df63db3f9ce834aa71533d3f08222b,
         type: 2}
