@@ -1,25 +1,25 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class scr_ParanormalCtrl : MonoBehaviour {
-
+public class scr_ParanormalCtrl : MonoBehaviour
+{
     public Rigidbody[] Pobjects = new Rigidbody[10];
 
     public Animator[] GhAnims = new Animator[3];
 
-    int Current;
+    private int Current;
 
     // Use this for initialization
-    void Start () {
+    private void Start()
+    {
         Current = -1;
     }
 
     public void DoParanormalActivity()
     {
-        int acction = Random.Range(0,3);
+        int acction = Random.Range(0, 3);
 
-        switch(acction)
+        switch (acction)
         {
             case 0:
                 {
@@ -28,11 +28,13 @@ public class scr_ParanormalCtrl : MonoBehaviour {
                     Pobjects[idr].useGravity = true;
                 }
                 break;
+
             case 1:
                 {
                     StartCoroutine(ParanormalLevitation());
                 }
                 break;
+
             case 2:
                 {
                     GhAnims[Random.Range(0, GhAnims.Length)].SetTrigger("Fade");
@@ -40,10 +42,9 @@ public class scr_ParanormalCtrl : MonoBehaviour {
                 break;
         }
         FindObjectOfType<SCR_UniatChan>().Llorar();
-        
     }
 
-    IEnumerator ParanormalLevitation()
+    private IEnumerator ParanormalLevitation()
     {
         int obj = Random.Range(0, Pobjects.Length);
         Pobjects[obj].useGravity = false;
@@ -52,6 +53,4 @@ public class scr_ParanormalCtrl : MonoBehaviour {
         Pobjects[obj].useGravity = true;
         Pobjects[obj].AddForce(new Vector3(Random.Range(4, 12), Random.Range(4, 12), Random.Range(4, 12)), ForceMode.Force);
     }
-
-
 }
